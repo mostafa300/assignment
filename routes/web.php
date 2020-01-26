@@ -11,9 +11,9 @@
 |
 */
 
-/*Route::get('/', function () {
+Route::get('/home', function () {
     return view('welcome');
-});*/
+});
 
 Auth::routes();
 Route::group(['prefix'=>'admin','as'=>'admin.','middleware'=>['auth']],function(){
